@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actualités — Étoile d'Or d'Adjamé</title>
+<meta name="description" content="Toute l'actualité du club Étoile d'Or d'Adjamé : matchs, transferts, entraînements et vie du club.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-badge"><img src="images/logo.jpg" alt="Étoile d'Or d'Adjamé"></div>
+</div>
+
+<header id="main-header">
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Logo Étoile d'Or d'Adjamé">
+        <div class="nav-logo-text"><span class="nav-title">Étoile d'Or</span><span class="nav-subtitle">D'Adjamé</span></div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="club.html" class="nav-link">Le Club</a></li>
+        <li><a href="equipe.html" class="nav-link">Équipe</a></li>
+        <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+        <li><a href="actualites.html" class="nav-link page-active">Actualités</a></li>
+        <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+        <li class="nav-item-dropdown">
+          <span class="nav-link dropdown-toggle">Plus <i class="fa-solid fa-chevron-down"></i></span>
+          <div class="dropdown-menu">
+            <a href="autofinancement.html" class="dropdown-link"><i class="fa-solid fa-coins"></i> Autofinancement</a>
+            <a href="boutique.html" class="dropdown-link"><i class="fa-solid fa-shirt"></i> Boutique</a>
+            <a href="evenements.html" class="dropdown-link"><i class="fa-solid fa-calendar-days"></i> Événements</a>
+            <a href="index.html#sponsors" class="dropdown-link"><i class="fa-solid fa-handshake"></i> Sponsors</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu mobile"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner">
+  <div class="page-banner-bg"><img src="images/news-stadium.jpg" alt="Stade de football"></div>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <p class="page-banner-kicker">Blog du club</p>
+    <h1 class="page-banner-title">Nos <span>Actualités</span></h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> <i class="fa-solid fa-chevron-right"></i> <span>Actualités</span></div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE A LA UNE ============ -->
+<section style="background: var(--white);">
+  <div class="section-container">
+    <div class="news-featured" data-aos="fade-up">
+      <div class="news-featured-img"><img src="images/news-stadium.jpg" alt="Préparation du prochain match"></div>
+      <div class="news-featured-body">
+        <span class="news-date" style="background: var(--gold); color: var(--black); padding: 5px 14px; border-radius: 20px; font-size: 0.72rem; font-weight: 700;">À la une — 12 Sept. 2026</span>
+        <h2>Préparation pour le prochain match contre l'ASEC Mimosas</h2>
+        <p>L'équipe s'est entraînée intensément cette semaine sous la houlette du Coach Adama Touré pour préparer le choc à domicile face à l'ASEC Mimosas. L'ambiance au centre d'entraînement est électrique : les joueurs affichent une motivation sans faille à quelques jours de cette rencontre décisive pour la course au titre.</p>
+        <a href="#" class="btn btn-gold">Lire l'article complet</a>
+      </div>
+    </div>
+
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-kicker center">Toute l'actualité</p>
+      <h2 class="section-title center">Dernières <span>Nouvelles</span></h2>
+    </div>
+
+    <div class="news-filters" data-aos="fade-up">
+      <button class="news-filter-btn active" data-newsfilter="all">Tout</button>
+      <button class="news-filter-btn" data-newsfilter="matchs">Matchs</button>
+      <button class="news-filter-btn" data-newsfilter="transferts">Transferts</button>
+      <button class="news-filter-btn" data-newsfilter="entrainements">Entraînements</button>
+      <button class="news-filter-btn" data-newsfilter="club">Vie du club</button>
+    </div>
+
+    <div class="news-full-grid" id="news-full-grid">
+      <article class="news-card" data-newscat="transferts" data-aos="fade-up" data-aos-delay="0">
+        <div class="news-image"><img src="images/news-players.jpg" alt="Nouveaux joueurs"><span class="news-date">05 Sept. 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Nouveaux joueurs dans l'équipe</h3>
+          <p class="news-desc">Le club renforce son effectif avec l'arrivée de trois nouveaux talents pour la saison, apportant vitesse et expérience à l'effectif.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="matchs" data-aos="fade-up" data-aos-delay="100">
+        <div class="news-image"><img src="images/gallery-match2.jpg" alt="Résultats du dernier match"><span class="news-date">02 Sept. 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Résultats du dernier match</h3>
+          <p class="news-desc">Une belle victoire 3-1 face au Racing Club d'Abobo, portée par un doublé de Koffi Jean devant un public en fête.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="entrainements" data-aos="fade-up" data-aos-delay="200">
+        <div class="news-image"><img src="images/news-training.jpg" alt="Entraînement de l'équipe"><span class="news-date">28 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Entraînement de l'équipe</h3>
+          <p class="news-desc">Séances physiques et tactiques intensives cette semaine pour préparer les échéances importantes du mois de septembre.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="club" data-aos="fade-up" data-aos-delay="0">
+        <div class="news-image"><img src="images/gallery-event.jpg" alt="Événement du club"><span class="news-date">20 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Journée portes ouvertes au centre de formation</h3>
+          <p class="news-desc">Le club a accueilli des dizaines de jeunes d'Adjamé pour une journée de détection de talents dans une ambiance conviviale.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="matchs" data-aos="fade-up" data-aos-delay="100">
+        <div class="news-image"><img src="images/match-tackle.jpg" alt="Match nul"><span class="news-date">25 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Match nul frustrant face à Treichville</h3>
+          <p class="news-desc">Un match nul 1-1 qui laisse un goût d'inachevé après une deuxième mi-temps largement dominée par nos couleurs.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="club" data-aos="fade-up" data-aos-delay="200">
+        <div class="news-image"><img src="images/fans-crowd.jpg" alt="Supporters"><span class="news-date">15 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Le nouveau maillot dévoilé aux supporters</h3>
+          <p class="news-desc">Le club a présenté son nouveau maillot vert et or lors d'une soirée spéciale organisée avec les supporters.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="transferts" data-aos="fade-up" data-aos-delay="0">
+        <div class="news-image"><img src="images/player5.jpg" alt="Nouveau attaquant"><span class="news-date">08 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Traoré Ibrahim rejoint officiellement le club</h3>
+          <p class="news-desc">L'attaquant de 22 ans s'est engagé pour trois saisons avec l'Étoile d'Or d'Adjamé, un renfort attendu en pointe de l'attaque.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="entrainements" data-aos="fade-up" data-aos-delay="100">
+        <div class="news-image"><img src="images/gallery-training2.jpg" alt="Stage de préparation"><span class="news-date">01 Août 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Stage de préparation estivale réussi</h3>
+          <p class="news-desc">L'équipe a bouclé un stage intensif de deux semaines axé sur la condition physique et la cohésion de groupe.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card" data-newscat="matchs" data-aos="fade-up" data-aos-delay="200">
+        <div class="news-image"><img src="images/gallery-fans1.jpg" alt="Victoire à domicile"><span class="news-date">27 Juillet 2026</span></div>
+        <div class="news-body">
+          <h3 class="news-title">Belle victoire à domicile pour lancer la saison</h3>
+          <p class="news-desc">Une victoire convaincante 2-1 face à Africa Sports d'Abidjan pour un premier match de saison réussi devant nos supporters.</p>
+          <a href="#" class="news-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="section-container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.jpg" alt="Logo Étoile d'Or d'Adjamé">
+          <div><span class="footer-title">Étoile d'Or</span><span class="footer-subtitle">D'Adjamé</span></div>
+        </a>
+        <p class="footer-desc">Le club de football qui porte fièrement les couleurs vert et or d'Adjamé, à Abidjan.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="club.html">Le Club</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="matchs.html">Matchs</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="autofinancement.html">Autofinancement</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Le Club</h4>
+        <ul>
+          <li><a href="index.html#values">Nos valeurs</a></li>
+          <li><a href="equipe.html">Notre effectif</a></li>
+          <li><a href="matchs.html">Calendrier</a></li>
+          <li><a href="index.html#contact">Nous contacter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Adjamé, Abidjan, Côte d'Ivoire</li>
+          <li><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@etoileordadjame.ci</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="section-container footer-bottom-inner">
+      <p>&copy; 2026 Étoile d'Or d'Adjamé — Tous droits réservés.</p>
+      <p class="footer-legal-links">
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <span>·</span>
+        <a href="#" class="footer-cookie-settings">Gérer mes cookies</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BANDEAU COOKIES ============ -->
+<div id="cookie-banner">
+  <div class="cookie-banner-inner">
+    <p class="cookie-banner-text">
+      <i class="fa-solid fa-cookie-bite"></i>
+      Nous utilisons des cookies strictement nécessaires au fonctionnement du site, ainsi que des cookies optionnels de mesure d'audience (actuellement inactifs). <strong>Vous choisissez</strong> ce que vous acceptez. En savoir plus dans notre <a href="confidentialite.html">politique de confidentialité</a>.
+    </p>
+    <div class="cookie-banner-actions">
+      <button class="cookie-btn cookie-btn-necessary" id="cookie-necessary-only" type="button">Essentiels uniquement</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookie-accept-all" type="button">Tout accepter</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODALE PREFERENCES COOKIES ============ -->
+<div id="cookie-modal">
+  <div class="cookie-modal-box">
+    <div class="cookie-modal-close" id="cookie-modal-close"><i class="fa-solid fa-xmark"></i></div>
+    <h3>Préférences de cookies</h3>
+    <p>Gérez ici les cookies utilisés sur le site de l'Étoile d'Or d'Adjamé. Les cookies strictement nécessaires ne peuvent pas être désactivés.</p>
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-info">
+        <h4>Cookies strictement nécessaires</h4>
+        <p>Indispensables au fonctionnement du site (mémorisation de votre choix de consentement).</p>
+      </div>
+      <label class="cookie-switch"><input type="checkbox" checked disabled><span class="slider"></span></label>
+    </div>
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-info">
+        <h4>Cookies de mesure d'audience</h4>
+        <p>Nous aident à comprendre la fréquentation du site (actuellement aucun outil n'est déployé).</p>
+      </div>
+      <label class="cookie-switch"><input type="checkbox" id="cookie-analytics-toggle"><span class="slider"></span></label>
+    </div>
+    <button class="btn btn-gold cookie-modal-save" id="cookie-modal-save" type="button"><i class="fa-solid fa-check"></i> Enregistrer mes préférences</button>
+  </div>
+</div>
+
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+</html>

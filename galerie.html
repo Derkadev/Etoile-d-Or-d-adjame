@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — Étoile d'Or d'Adjamé</title>
+<meta name="description" content="Galerie photo du club Étoile d'Or d'Adjamé : matchs, entraînements, joueurs, supporters et événements.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-badge"><img src="images/logo.jpg" alt="Étoile d'Or d'Adjamé"></div>
+</div>
+
+<header id="main-header">
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.jpg" alt="Logo Étoile d'Or d'Adjamé">
+        <div class="nav-logo-text"><span class="nav-title">Étoile d'Or</span><span class="nav-subtitle">D'Adjamé</span></div>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="club.html" class="nav-link">Le Club</a></li>
+        <li><a href="equipe.html" class="nav-link">Équipe</a></li>
+        <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+        <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+        <li><a href="galerie.html" class="nav-link page-active">Galerie</a></li>
+        <li class="nav-item-dropdown">
+          <span class="nav-link dropdown-toggle">Plus <i class="fa-solid fa-chevron-down"></i></span>
+          <div class="dropdown-menu">
+            <a href="autofinancement.html" class="dropdown-link"><i class="fa-solid fa-coins"></i> Autofinancement</a>
+            <a href="boutique.html" class="dropdown-link"><i class="fa-solid fa-shirt"></i> Boutique</a>
+            <a href="evenements.html" class="dropdown-link"><i class="fa-solid fa-calendar-days"></i> Événements</a>
+            <a href="index.html#sponsors" class="dropdown-link"><i class="fa-solid fa-handshake"></i> Sponsors</a>
+          </div>
+        </li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu mobile"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner">
+  <div class="page-banner-bg"><img src="images/gallery-fans1.jpg" alt="Supporters au stade"></div>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <p class="page-banner-kicker">En images</p>
+    <h1 class="page-banner-title">Notre <span>Galerie</span></h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> <i class="fa-solid fa-chevron-right"></i> <span>Galerie</span></div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ETENDUE ============ -->
+<section class="gallery-section">
+  <div class="section-container">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-kicker center">Moments forts</p>
+      <h2 class="section-title center">Matchs, Entraînements &amp; <span>Supporters</span></h2>
+      <p class="section-desc center">Toute la vie du club en images : intensité des matchs, rigueur des entraînements et ferveur des supporters.</p>
+    </div>
+
+    <div class="gallery-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="matchs">Matchs</button>
+      <button class="filter-btn" data-filter="entrainements">Entraînements</button>
+      <button class="filter-btn" data-filter="joueurs">Joueurs</button>
+      <button class="filter-btn" data-filter="supporters">Supporters</button>
+      <button class="filter-btn" data-filter="evenements">Événements</button>
+    </div>
+
+    <div class="masonry-gallery gallery-extended" id="masonry-gallery">
+      <div class="gallery-item span-tall" data-category="matchs" data-aos="fade-up" data-aos-delay="0">
+        <img src="images/hero-bg.jpg" alt="Match en stade"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="joueurs" data-aos="fade-up" data-aos-delay="50">
+        <img src="images/player1.jpg" alt="Joueurs en action"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="supporters" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/gallery-fans1.jpg" alt="Supporters au stade"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item span-wide" data-category="entrainements" data-aos="fade-up" data-aos-delay="150">
+        <img src="images/gallery-training.jpg" alt="Entraînement du club"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="matchs" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/gallery-match3.jpg" alt="Action de match"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item span-tall" data-category="joueurs" data-aos="fade-up" data-aos-delay="250">
+        <img src="images/player5.jpg" alt="Joueur en action"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="supporters" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/gallery-fans2.jpg" alt="Foule de supporters"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item span-wide" data-category="matchs" data-aos="fade-up" data-aos-delay="350">
+        <img src="images/gallery-match2.jpg" alt="Vue du stade"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="entrainements" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/gallery-training2.jpg" alt="Séance d'entraînement"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="evenements" data-aos="fade-up" data-aos-delay="450">
+        <img src="images/gallery-event.jpg" alt="Événement du club"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="joueurs" data-aos="fade-up" data-aos-delay="0">
+        <img src="images/player4.jpg" alt="Joueur en action"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="matchs" data-aos="fade-up" data-aos-delay="50">
+        <img src="images/match-tackle.jpg" alt="Duel de match"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item span-wide" data-category="supporters" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/fans-crowd.jpg" alt="Célébration des supporters"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="entrainements" data-aos="fade-up" data-aos-delay="150">
+        <img src="images/staff-motivation.jpg" alt="Staff en entraînement"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="joueurs" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/player6.jpg" alt="Joueur portrait"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-category="evenements" data-aos="fade-up" data-aos-delay="250">
+        <img src="images/coach.jpg" alt="Coach sur le terrain"><div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+  <img src="" alt="" id="lightbox-img">
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="section-container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.jpg" alt="Logo Étoile d'Or d'Adjamé">
+          <div><span class="footer-title">Étoile d'Or</span><span class="footer-subtitle">D'Adjamé</span></div>
+        </a>
+        <p class="footer-desc">Le club de football qui porte fièrement les couleurs vert et or d'Adjamé, à Abidjan.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="club.html">Le Club</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="matchs.html">Matchs</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="autofinancement.html">Autofinancement</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Le Club</h4>
+        <ul>
+          <li><a href="index.html#values">Nos valeurs</a></li>
+          <li><a href="equipe.html">Notre effectif</a></li>
+          <li><a href="matchs.html">Calendrier</a></li>
+          <li><a href="index.html#contact">Nous contacter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Adjamé, Abidjan, Côte d'Ivoire</li>
+          <li><i class="fa-solid fa-phone"></i> +225 07 00 00 00 00</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@etoileordadjame.ci</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="section-container footer-bottom-inner">
+      <p>&copy; 2026 Étoile d'Or d'Adjamé — Tous droits réservés.</p>
+      <p class="footer-legal-links">
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <span>·</span>
+        <a href="#" class="footer-cookie-settings">Gérer mes cookies</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BANDEAU COOKIES ============ -->
+<div id="cookie-banner">
+  <div class="cookie-banner-inner">
+    <p class="cookie-banner-text">
+      <i class="fa-solid fa-cookie-bite"></i>
+      Nous utilisons des cookies strictement nécessaires au fonctionnement du site, ainsi que des cookies optionnels de mesure d'audience (actuellement inactifs). <strong>Vous choisissez</strong> ce que vous acceptez. En savoir plus dans notre <a href="confidentialite.html">politique de confidentialité</a>.
+    </p>
+    <div class="cookie-banner-actions">
+      <button class="cookie-btn cookie-btn-necessary" id="cookie-necessary-only" type="button">Essentiels uniquement</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookie-accept-all" type="button">Tout accepter</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODALE PREFERENCES COOKIES ============ -->
+<div id="cookie-modal">
+  <div class="cookie-modal-box">
+    <div class="cookie-modal-close" id="cookie-modal-close"><i class="fa-solid fa-xmark"></i></div>
+    <h3>Préférences de cookies</h3>
+    <p>Gérez ici les cookies utilisés sur le site de l'Étoile d'Or d'Adjamé. Les cookies strictement nécessaires ne peuvent pas être désactivés.</p>
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-info">
+        <h4>Cookies strictement nécessaires</h4>
+        <p>Indispensables au fonctionnement du site (mémorisation de votre choix de consentement).</p>
+      </div>
+      <label class="cookie-switch"><input type="checkbox" checked disabled><span class="slider"></span></label>
+    </div>
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-info">
+        <h4>Cookies de mesure d'audience</h4>
+        <p>Nous aident à comprendre la fréquentation du site (actuellement aucun outil n'est déployé).</p>
+      </div>
+      <label class="cookie-switch"><input type="checkbox" id="cookie-analytics-toggle"><span class="slider"></span></label>
+    </div>
+    <button class="btn btn-gold cookie-modal-save" id="cookie-modal-save" type="button"><i class="fa-solid fa-check"></i> Enregistrer mes préférences</button>
+  </div>
+</div>
+
+<a href="#" class="back-to-top" id="back-to-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+</html>
